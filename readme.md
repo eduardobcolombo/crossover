@@ -1,4 +1,4 @@
-# Laravel PHP Framework
+# Crossover - Software Engineer - PHP Assignment
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
@@ -6,13 +6,23 @@
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+This document specified the setup and usage of applicatino to delivery pathology lab reports
+ 
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Setup
 
-## Official Documentation
+Requirements 
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Consider that you have php5.6 or latest, composer and git
+
+
+- Clone this project on your local machine or download the zip file
+- Do composer install
+- Generate your app key with: php artisan key:generate
+- Create the mysql database for example: lab or import the file database/create_database.sql in your mysql
+- Configure your .env with your database configurations (user, password, database)
+- Do php artisan migrate for create your tables and php artisan db:seed to populate your database, or import the contents of tables with file database/database.sql in your mysql
+
 
 ## Contributing
 

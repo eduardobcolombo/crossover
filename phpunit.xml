@@ -23,5 +23,12 @@
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>
+        <var name="DB_CONNECTION" value="mysql" />
+        <var name="DB_HOST" value="127.0.0.1" />
+        <var name="DB_PORT" value="3306" />
+        <var name="DB_DBNAME" value="crossover" />
+        <var name="DB_USER" value="root" />
+        <var name="DB_PASSWD" value="ettore" />
+
     </php>
 </phpunit>
