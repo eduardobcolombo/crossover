@@ -24,13 +24,14 @@ Consider that you have php5.6 or latest, composer and git
 - Do php artisan migrate for create your tables and php artisan db:seed to populate your database, or import the contents of tables with file database/database.sql in your mysql
 
 
-## Contributing
+## Using
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+
+
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this project, please send an e-mail to owner or open a issues. All security vulnerabilities will be promptly addressed.
 
 ## License
 
