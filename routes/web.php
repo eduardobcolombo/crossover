@@ -31,5 +31,5 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth.checkrole:admin', 'as'=>'ad
 Auth::routes();
 
 Route::get('/home', function() {
-    return redirect()->route('admin.patients.index');
+    return view('home');
 });
