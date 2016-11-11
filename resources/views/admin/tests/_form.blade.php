@@ -1,3 +1,4 @@
+<input type="hidden" name="_token" value="{{ csrf_token() }}">
 <div class="row">
     <div class="col-md-10">
         <div class="form-group">
@@ -8,15 +9,9 @@
 
     <div class="col-md-10">
         <div class="'form-group">
-            {!! Form::submit('Save',['class'=>'btn btn-primary', 'value'=>'Save']) !!}
+            {!! Form::button('newtest',['class'=>'btn btn-primary', 'type'=>'button', 'id'=>'newtest', 'value'=>'newtest']) !!}
         </div>
     </div>
 </div>
 
 
-
-<div id="testsInserteds" class="row">
-
-
-
-</div>

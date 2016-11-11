@@ -43,7 +43,7 @@ class TestsController extends Controller
 
 //        $this->repository->create($data);
 
-        return var_dump(::json(Request::all()));
+        return \Response::json($data);
 //        return redirect()->route('admin.tests.index');
     }
 
