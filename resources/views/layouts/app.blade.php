@@ -88,5 +88,7 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+
+    @yield('post-script')
 </body>
 </html>

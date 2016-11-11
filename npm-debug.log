@@ -1,0 +1,127 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'bootstrap/modal' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bootstrap/modal
+8 silly fetchOtherPackageData bootstrap/modal
+9 silly cache add args [ 'bootstrap/modal', null ]
+10 verbose cache add spec bootstrap/modal
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'bootstrap/modal',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'bootstrap/modal',
+11 silly cache add   spec: 'github:bootstrap/modal',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:bootstrap/modal.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/bootstrap/modal.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/bootstrap/modal.git',
+11 silly cache add      gitUrl: 'git://github.com/bootstrap/modal.git',
+11 silly cache add      shortcut: 'github:bootstrap/modal',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/bootstrap/modal/master/package.json' } }
+12 verbose addRemoteGit caching bootstrap/modal
+13 verbose addRemoteGit bootstrap/modal is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/bootstrap/modal.git
+15 silly tryClone cloning bootstrap/modal via git://github.com/bootstrap/modal.git
+16 verbose tryClone git-github-com-bootstrap-modal-git-524dea67 not in flight; caching
+17 verbose correctMkdir /home/eduardo/.npm/_git-remotes correctMkdir not in flight; initializing
+18 info git [ 'clone',
+18 info git   '--template=/home/eduardo/.npm/_git-remotes/_templates',
+18 info git   '--mirror',
+18 info git   'git://github.com/bootstrap/modal.git',
+18 info git   '/home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-524dea67' ]
+19 verbose git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git://github.com/bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-524dea67: Cloning into bare repository '/home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-524dea67'...
+19 verbose git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git://github.com/bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-524dea67: fatal: remote error:
+19 verbose git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git://github.com/bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-524dea67:   Repository not found.
+20 silly tryHTTPS attempting to clone git+https://github.com/bootstrap/modal.git
+21 silly tryClone cloning bootstrap/modal via git+https://github.com/bootstrap/modal.git
+22 verbose tryClone git-https-github-com-bootstrap-modal-git-2ac1157f not in flight; caching
+23 verbose correctMkdir /home/eduardo/.npm/_git-remotes correctMkdir not in flight; initializing
+24 info git [ 'clone',
+24 info git   '--template=/home/eduardo/.npm/_git-remotes/_templates',
+24 info git   '--mirror',
+24 info git   'https://github.com/bootstrap/modal.git',
+24 info git   '/home/eduardo/.npm/_git-remotes/git-https-github-com-bootstrap-modal-git-2ac1157f' ]
+25 verbose git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror https://github.com/bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-https-github-com-bootstrap-modal-git-2ac1157f: Cloning into bare repository '/home/eduardo/.npm/_git-remotes/git-https-github-com-bootstrap-modal-git-2ac1157f'...
+25 verbose git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror https://github.com/bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-https-github-com-bootstrap-modal-git-2ac1157f: remote: Invalid username or password.
+25 verbose git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror https://github.com/bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-https-github-com-bootstrap-modal-git-2ac1157f: fatal: Authentication failed for 'https://github.com/bootstrap/modal.git/'
+26 silly trySSH attempting to clone git@github.com:bootstrap/modal.git
+27 silly tryClone cloning bootstrap/modal via git@github.com:bootstrap/modal.git
+28 verbose tryClone git-github-com-bootstrap-modal-git-29357795 not in flight; caching
+29 verbose correctMkdir /home/eduardo/.npm/_git-remotes correctMkdir not in flight; initializing
+30 info git [ 'clone',
+30 info git   '--template=/home/eduardo/.npm/_git-remotes/_templates',
+30 info git   '--mirror',
+30 info git   'git@github.com:bootstrap/modal.git',
+30 info git   '/home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795' ]
+31 error git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795: Cloning into bare repository '/home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795'...
+31 error git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795: ERROR: Repository not found.
+31 error git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795: fatal: Could not read from remote repository.
+31 error git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795:
+31 error git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795: Please make sure you have the correct access rights
+31 error git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795: and the repository exists.
+32 silly fetchPackageMetaData Error: Command failed: git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795
+32 silly fetchPackageMetaData Cloning into bare repository '/home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795'...
+32 silly fetchPackageMetaData ERROR: Repository not found.
+32 silly fetchPackageMetaData fatal: Could not read from remote repository.
+32 silly fetchPackageMetaData
+32 silly fetchPackageMetaData Please make sure you have the correct access rights
+32 silly fetchPackageMetaData and the repository exists.
+32 silly fetchPackageMetaData
+32 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:213:12)
+32 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+32 silly fetchPackageMetaData     at ChildProcess.emit (events.js:172:7)
+32 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:827:16)
+32 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+32 silly fetchPackageMetaData  error for bootstrap/modal { [Error: Command failed: git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795
+32 silly fetchPackageMetaData Cloning into bare repository '/home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795'...
+32 silly fetchPackageMetaData ERROR: Repository not found.
+32 silly fetchPackageMetaData fatal: Could not read from remote repository.
+32 silly fetchPackageMetaData
+32 silly fetchPackageMetaData Please make sure you have the correct access rights
+32 silly fetchPackageMetaData and the repository exists.
+32 silly fetchPackageMetaData ]
+32 silly fetchPackageMetaData   killed: false,
+32 silly fetchPackageMetaData   code: 128,
+32 silly fetchPackageMetaData   signal: null,
+32 silly fetchPackageMetaData   cmd: 'git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795' }
+33 silly rollbackFailedOptional Starting
+34 silly rollbackFailedOptional Finishing
+35 silly runTopLevelLifecycles Starting
+36 silly runTopLevelLifecycles Finishing
+37 silly install printInstalled
+38 verbose stack Error: Command failed: git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795
+38 verbose stack Cloning into bare repository '/home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795'...
+38 verbose stack ERROR: Repository not found.
+38 verbose stack fatal: Could not read from remote repository.
+38 verbose stack
+38 verbose stack Please make sure you have the correct access rights
+38 verbose stack and the repository exists.
+38 verbose stack
+38 verbose stack     at ChildProcess.exithandler (child_process.js:213:12)
+38 verbose stack     at emitTwo (events.js:87:13)
+38 verbose stack     at ChildProcess.emit (events.js:172:7)
+38 verbose stack     at maybeClose (internal/child_process.js:827:16)
+38 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+39 verbose cwd /home/eduardo/Documentos/projetcts/crossover/crossover
+40 error Linux 4.7.2-101.fc23.x86_64
+41 error argv "/usr/bin/node" "/usr/bin/npm" "install" "bootstrap/modal"
+42 error node v4.4.3
+43 error npm  v3.10.5
+44 error code 128
+45 error Command failed: git clone --template=/home/eduardo/.npm/_git-remotes/_templates --mirror git@github.com:bootstrap/modal.git /home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795
+45 error Cloning into bare repository '/home/eduardo/.npm/_git-remotes/git-github-com-bootstrap-modal-git-29357795'...
+45 error ERROR: Repository not found.
+45 error fatal: Could not read from remote repository.
+45 error
+45 error Please make sure you have the correct access rights
+45 error and the repository exists.
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

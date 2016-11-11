@@ -28,11 +28,13 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth.checkrole:admin', 'as'=>'ad
 
 
     Route::get('reports', ['as' => 'reports.index', 'uses' => 'ReportsController@index']);
+    Route::get('reports/select_patient', ['as' => 'reports.select_patient', 'uses' => 'ReportsController@select_patient']);
     Route::get('reports/create', ['as' => 'reports.create', 'uses' => 'ReportsController@create']);
     Route::get('reports/edit/{id}', ['as' => 'reports.edit', 'uses' => 'ReportsController@edit']);
     Route::post('reports/update/{id}', ['as' => 'reports.update', 'uses' => 'ReportsController@update']);
     Route::post('reports/store', ['as' => 'reports.store', 'uses' => 'ReportsController@store']);
     Route::get('reports/destroy/{id}', ['as' => 'reports.destroy', 'uses' => 'ReportsController@destroy']);
+    Route::post('reports/select_patient', ['as' => 'reports.filter', 'uses' => 'ReportsController@filter']);
 
 
     Route::get('type_tests', ['as' => 'type_tests.index', 'uses' => 'TypeTestsController@index']);
@@ -41,8 +43,17 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth.checkrole:admin', 'as'=>'ad
     Route::post('type_tests/update/{id}', ['as' => 'type_tests.update', 'uses' => 'TypeTestsController@update']);
     Route::post('type_tests/store', ['as' => 'type_tests.store', 'uses' => 'TypeTestsController@store']);
     Route::get('type_tests/destroy/{id}', ['as' => 'type_tests.destroy', 'uses' => 'TypeTestsController@destroy']);
-    Route::post('type_tests', ['as' => 'type_tests.filter', 'uses' => 'TypeTestsController@filter']);    
-    
+    Route::post('type_tests', ['as' => 'type_tests.filter', 'uses' => 'TypeTestsController@filter']);
+
+    Route::get('tests', ['as' => 'tests.index', 'uses' => 'TestsController@index']);
+    Route::get('tests/create', ['as' => 'tests.create', 'uses' => 'TestsController@create']);
+    Route::get('tests/edit/{id}', ['as' => 'tests.edit', 'uses' => 'TestsController@edit']);
+    Route::post('tests/update/{id}', ['as' => 'tests.update', 'uses' => 'TestsController@update']);
+    Route::post('tests/store', ['as' => 'tests.store', 'uses' => 'TestsController@store']);
+    Route::get('tests/store', ['as' => 'tests.store', 'uses' => 'TestsController@store']);
+    Route::get('tests/destroy/{id}', ['as' => 'tests.destroy', 'uses' => 'TestsController@destroy']);
+    Route::post('tests', ['as' => 'tests.filter', 'uses' => 'TestsController@filter']);
+
 });
 
 Auth::routes();

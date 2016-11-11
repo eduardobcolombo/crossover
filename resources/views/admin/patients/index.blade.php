@@ -32,6 +32,12 @@
                 <td>{{$patient->phone}}</td>
                 <td>{{$patient->cellphone  }} </td>
                 <td>
+                    <a href="{{route('admin.reports.create',['patient_id'=>$patient->id])}}" class="btn btn-primary btn-sm">
+                        Create Report
+                    </a>
+                    <a href="{{route('admin.reports.index',['patient_id'=>$patient->id])}}" class="btn btn-primary btn-sm">
+                        List Reports
+                    </a>
                     <a href="{{route('admin.patients.edit',['id'=>$patient->id])}}" class="btn btn-default btn-sm">
                         Update
                     </a>

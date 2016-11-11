@@ -24,7 +24,11 @@ class TypeTestRepositoryEloquent extends BaseRepository implements TypeTestRepos
         return TypeTest::class;
     }
 
-    
+    public function getTypeTest()
+    {
+        return $this->model->all()->pluck('title', 'id');
+    }
+
 
     /**
      * Boot up the repository, pushing criteria

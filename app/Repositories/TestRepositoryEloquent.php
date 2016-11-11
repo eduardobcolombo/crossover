@@ -24,7 +24,6 @@ class TestRepositoryEloquent extends BaseRepository implements TestRepository
         return Test::class;
     }
 
-    
 
     /**
      * Boot up the repository, pushing criteria

@@ -24,7 +24,10 @@ class PatientRepositoryEloquent extends BaseRepository implements PatientReposit
         return Patient::class;
     }
 
-    
+    public function getPatients()
+    {
+        return $this->model->all()->pluck('name', 'id');
+    }
 
     /**
      * Boot up the repository, pushing criteria

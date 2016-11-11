@@ -3,13 +3,13 @@
 @section('content')
 
     <div class="container">
-        <h3>Updating Patient: {{ $patient->name }} </h3>
+        <h3>Updating Report/Exam: {{ $report->id }} </h3>
 
         @include('errors._check')
 
-        {!! Form::model($patient, ['route'=>['admin.patients.update',$patient->id]]) !!}
+        {!! Form::model($report, ['route'=>['admin.reports.update',$report->id]]) !!}
 
-        @include('admin.patients._form')
+        @include('admin.reports._form')
 
         {!! Form::close() !!}
 
