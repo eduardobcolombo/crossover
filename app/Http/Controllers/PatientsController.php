@@ -72,7 +72,7 @@ class PatientsController extends Controller
     {
         $name = $request->get('name');
         $patients = $this->repository->findbyField('name', $name);
-//        dd($patients);
+
         return view('admin.patients.index', compact('patients','name'));
     }
 

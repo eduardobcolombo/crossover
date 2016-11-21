@@ -45,7 +45,7 @@
                     <ul class="nav navbar-nav">
                         &nbsp;
                         <li><a href="{{ route('admin.patients.index') }}">Patients</a></li>
-                        <li><a href="{{ route('admin.reports.index') }}">Reports</a></li>
+                        {{--<li><a href="{{ route('admin.reports.index') }}">Reports</a></li>--}}
                         <li><a href="{{ route('admin.type_tests.index') }}">Settings</a></li>
 
 

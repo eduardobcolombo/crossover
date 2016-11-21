@@ -39,10 +39,7 @@ class RepositoryServiceProvider extends ServiceProvider
             'App\Repositories\TestRepository',
             'App\Repositories\TestRepositoryEloquent'
         );
-        $this->app->bind(
-            'App\Repositories\ResultRepository',
-            'App\Repositories\ResultRepositoryEloquent'
-        );
+
 
 
     }

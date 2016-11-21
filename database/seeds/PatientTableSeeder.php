@@ -1,8 +1,9 @@
 <?php
 
+use App\Models\Calorie;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class CalorieTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +12,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UserTableSeeder::class);
-        $this->call(PatientTableSeeder::class);
+        factory(Patient::class, 10)
+            ->create();
+
     }
 }

@@ -28,13 +28,12 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth.checkrole:admin', 'as'=>'ad
 
 
     Route::get('reports', ['as' => 'reports.index', 'uses' => 'ReportsController@index']);
-    Route::get('reports/select_patient', ['as' => 'reports.select_patient', 'uses' => 'ReportsController@select_patient']);
     Route::get('reports/create', ['as' => 'reports.create', 'uses' => 'ReportsController@create']);
-    Route::get('reports/edit/{id}', ['as' => 'reports.edit', 'uses' => 'ReportsController@edit']);
-    Route::post('reports/update/{id}', ['as' => 'reports.update', 'uses' => 'ReportsController@update']);
     Route::post('reports/store', ['as' => 'reports.store', 'uses' => 'ReportsController@store']);
+    Route::get('reports/show/{id}', ['as' => 'reports.show', 'uses' => 'ReportsController@show']);
+    Route::get('reports/export/{id}', ['as' => 'reports.export', 'uses' => 'ReportsController@export']);
+    Route::get('reports/mail/{id}', ['as' => 'reports.mail', 'uses' => 'ReportsController@mail']);
     Route::get('reports/destroy/{id}', ['as' => 'reports.destroy', 'uses' => 'ReportsController@destroy']);
-    Route::post('reports/select_patient', ['as' => 'reports.filter', 'uses' => 'ReportsController@filter']);
 
 
     Route::get('type_tests', ['as' => 'type_tests.index', 'uses' => 'TypeTestsController@index']);
@@ -58,6 +57,3 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth.checkrole:admin', 'as'=>'ad
 
 Auth::routes();
 
-Route::get('/home', function() {
-    return view('home');
-});

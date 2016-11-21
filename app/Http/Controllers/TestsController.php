@@ -40,11 +40,18 @@ class TestsController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
+        $dataSet['type_test_id'] = $data['type_test_id'];
+        $dataSet['description'] = $data['result_text'];
+        $dataSet['report_id'] = $data['report_id'];
 
-//        $this->repository->create($data);
+        $this->repository->create($dataSet);
+        $typeTestTitle = $this->typeTestRepository->find($data['type_test_id'])->title;
+        if ($request->ajax()) {
+            $return = "<strong>".$typeTestTitle. "</strong><br /> -> " .$data['result_text'];
+            return $return;
+        }
 
-        return \Response::json($data);
-//        return redirect()->route('admin.tests.index');
+        return redirect()->route('admin.tests.index');
     }
 
     public function edit($id)

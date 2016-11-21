@@ -21,7 +21,7 @@ class UserTest extends TestCase
             ->type('111111', 'password')
             ->type('111111', 'password_confirmation')
             ->press('Register')
-            ->seePageIs('/admin/calories');
+            ->seePageIs('/admin/patients');
     }
     /**
      * Test new user registration assert false short password
@@ -37,7 +37,6 @@ class UserTest extends TestCase
             ->type( $email.'@kalories.com', 'email')
             ->type('11111', 'password')
             ->type('11111', 'password_confirmation')
-            ->type('123', 'calories_expected')
             ->press('Register')
             ->dontSeeIsAuthenticated();
     }

@@ -11,8 +11,13 @@ class Test extends Model implements Transformable
     use TransformableTrait;
 
     protected $fillable = [
-        'id'
+        'id', 'description', 'type_test_id', 'report_id'
     ];
+
+    public function type_test()
+    {
+        return $this->belongsTo(TypeTest::class);
+    }
 
 
 }

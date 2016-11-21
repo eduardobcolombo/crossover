@@ -1,32 +1,31 @@
-# Crossover - Software Engineer - PHP Assignment
+# Pathology Reports
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Crossover - Software Engineer - PHP Assignment
 
-This document specified the setup and usage of applicatino to delivery pathology lab reports
+
  
+## Considerations
+
+I really liked this project, and I would like to dedicate more time to delivering my best performance, but unfortunately, I did not choose the time to start the project, because I had some problems with family commitments, my city.
+I would like you to evaluate my codes even though you are not fully complete.
+If I do not pass this test, I would still like the opportunity to repeat as soon as possible.
 
 ## Setup
 
 Requirements 
 
-Consider that you have php5.6 or latest, composer and git
+Consider that you have php5.6 or latest, mysql 5.4+, composer and git
 
 
 - Clone this project on your local machine or download the zip file
 - Do composer install
 - Generate your app key with: php artisan key:generate
 - Create the mysql database for example: lab or import the file database/create_database.sql in your mysql
+- Copy the .env.example to .env
 - Configure your .env with your database configurations (user, password, database)
-- Do php artisan migrate for create your tables and php artisan db:seed to populate your database, or import the contents of tables with file database/database.sql in your mysql
-
-
-## Using
-
-
+- Do php artisan migrate for create your tables and
+import the contents of tables with file database/database.sql in your mysql
+- For development use, type php artisan serve and access the application in your browser http://localhost:8000
 
 
 ## Security Vulnerabilities
@@ -35,4 +34,4 @@ If you discover a security vulnerability within this project, please send an e-m
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The Pathology Reports is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

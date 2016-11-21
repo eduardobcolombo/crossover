@@ -21,3 +21,15 @@ $factory->define(App\Moddels\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+
+$factory->define(App\Moddels\Patient::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'email' => $faker->unique()->safeEmail,
+        'address' => $faker->address,
+        'phone' => $faker->phone,
+        'cellphone' => $faker->phone,
+        'passcode' => md5($faker->sentence),
+    ];
+});

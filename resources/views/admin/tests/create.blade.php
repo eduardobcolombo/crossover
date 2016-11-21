@@ -1,20 +1,16 @@
 
     <div class="container">
-        <h3>New Test</h3>
+        <h2>Select the test:</h2>
 
         @include('errors._check')
 
-        {!! Form::open(['url'=>'#']) !!}
-
+        {!! Form::open(['route'=>'admin.tests.store']) !!}
+        {{--'url'=>'#'--}}
         @include('admin.tests._form')
 
         {!! Form::close() !!}
 
-        <div id="testsInserteds" class="row">
 
-
-
-        </div>
     </div>
 
 @section('post-script')
@@ -28,22 +24,24 @@
 
         $(document).ready(function(){
             $('#newtest').click(function () {
-                var type_test_id = $('#type_test_id').val();
-                $.post('/admin/tests/store',{type_test_id:type_test_id}, function (data) {
-                    console.log(data);
-                    $('#testsInserteds').append(data);
-                });
-
-//                var dataString = "type_test_id="+type_test_id;
-//                $.ajax({
-//                    type: "POST",
-//                    url: "tests/store",
-//                    data: dataString,
-//                    success: function(data){
-//                        console.log(data);
-//                    }
-//
+                var type_test_id = $('#type_test_id option:selected').val();
+                var result_text = $('#result_text').val();
+                var report_id = {{ $report_id }};
+//                $.post('/admin/tests/store',{type_test_id:type_test_id, result_text:result_text}, function (data) {
+//                    console.log(data);
+//                    $('#testsInserteds').append(data);
 //                });
+                var dataString = "report_id="+report_id+"&type_test_id="+type_test_id+"&result_text="+result_text;
+                $.ajax({
+                    type: "POST",
+                    url: "/admin/tests/store",
+                    data: dataString,
+                    success: function(data){
+//                        console.log(data);
+                        $('#testsInserteds').append("<p>"+data+"</p>");
+                        $('#result_text').val("");
+                    }
+                });
             });
         });
     </script>
